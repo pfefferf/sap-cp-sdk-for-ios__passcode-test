@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090F3ED31E9E06EB005D1984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090F3ED21E9E06EB005D1984 /* AppDelegate.swift */; };
+		090F3ED81E9E06EB005D1984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090F3ED61E9E06EB005D1984 /* Main.storyboard */; };
+		090F3EDA1E9E06EB005D1984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090F3ED91E9E06EB005D1984 /* Assets.xcassets */; };
+		090F3EDD1E9E06EB005D1984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090F3EDB1E9E06EB005D1984 /* LaunchScreen.storyboard */; };
+		097B033B1E9F41FA001E740D /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097B03381E9F41FA001E740D /* SAPCommon.framework */; };
+		097B033C1E9F41FA001E740D /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097B03381E9F41FA001E740D /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		097B033D1E9F41FA001E740D /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097B03391E9F41FA001E740D /* SAPFiori.framework */; };
+		097B033E1E9F41FA001E740D /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097B03391E9F41FA001E740D /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		097B033F1E9F41FA001E740D /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097B033A1E9F41FA001E740D /* SAPFoundation.framework */; };
+		097B03401E9F41FA001E740D /* SAPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 097B033A1E9F41FA001E740D /* SAPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		097B03421E9F4575001E740D /* PassCodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B03411E9F4575001E740D /* PassCodeHandler.swift */; };
+		097B03461E9F6172001E740D /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B03451E9F6172001E740D /* PasscodeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		090F3EF31E9E071D005D1984 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				097B03401E9F41FA001E740D /* SAPFoundation.framework in Embed Frameworks */,
+				097B033C1E9F41FA001E740D /* SAPCommon.framework in Embed Frameworks */,
+				097B033E1E9F41FA001E740D /* SAPFiori.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		090F3ECF1E9E06EB005D1984 /* passcode_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passcode_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		090F3ED21E9E06EB005D1984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		090F3ED71E9E06EB005D1984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		090F3ED91E9E06EB005D1984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		090F3EDC1E9E06EB005D1984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		090F3EDE1E9E06EB005D1984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		097B03381E9F41FA001E740D /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPCommon.framework; sourceTree = "<group>"; };
+		097B03391E9F41FA001E740D /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFiori.framework; sourceTree = "<group>"; };
+		097B033A1E9F41FA001E740D /* SAPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFoundation.framework; sourceTree = "<group>"; };
+		097B03411E9F4575001E740D /* PassCodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassCodeHandler.swift; path = ../PassCodeHandler.swift; sourceTree = "<group>"; };
+		097B03451E9F6172001E740D /* PasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090F3ECC1E9E06EB005D1984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				097B033F1E9F41FA001E740D /* SAPFoundation.framework in Frameworks */,
+				097B033B1E9F41FA001E740D /* SAPCommon.framework in Frameworks */,
+				097B033D1E9F41FA001E740D /* SAPFiori.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090F3EC61E9E06EB005D1984 = {
+			isa = PBXGroup;
+			children = (
+				097B03381E9F41FA001E740D /* SAPCommon.framework */,
+				097B03391E9F41FA001E740D /* SAPFiori.framework */,
+				097B033A1E9F41FA001E740D /* SAPFoundation.framework */,
+				090F3EF41E9E0727005D1984 /* Frameworks */,
+				090F3ED11E9E06EB005D1984 /* passcode_test */,
+				090F3ED01E9E06EB005D1984 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		090F3ED01E9E06EB005D1984 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090F3ECF1E9E06EB005D1984 /* passcode_test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090F3ED11E9E06EB005D1984 /* passcode_test */ = {
+			isa = PBXGroup;
+			children = (
+				097B03411E9F4575001E740D /* PassCodeHandler.swift */,
+				090F3ED21E9E06EB005D1984 /* AppDelegate.swift */,
+				097B03451E9F6172001E740D /* PasscodeViewController.swift */,
+				090F3ED61E9E06EB005D1984 /* Main.storyboard */,
+				090F3ED91E9E06EB005D1984 /* Assets.xcassets */,
+				090F3EDB1E9E06EB005D1984 /* LaunchScreen.storyboard */,
+				090F3EDE1E9E06EB005D1984 /* Info.plist */,
+			);
+			path = passcode_test;
+			sourceTree = "<group>";
+		};
+		090F3EF41E9E0727005D1984 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090F3ECE1E9E06EB005D1984 /* passcode_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090F3EE11E9E06EB005D1984 /* Build configuration list for PBXNativeTarget "passcode_test" */;
+			buildPhases = (
+				090F3ECB1E9E06EB005D1984 /* Sources */,
+				090F3ECC1E9E06EB005D1984 /* Frameworks */,
+				090F3ECD1E9E06EB005D1984 /* Resources */,
+				090F3EF31E9E071D005D1984 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = passcode_test;
+			productName = passcode_test;
+			productReference = 090F3ECF1E9E06EB005D1984 /* passcode_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090F3EC71E9E06EB005D1984 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Florian Pfeffer";
+				TargetAttributes = {
+					090F3ECE1E9E06EB005D1984 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = P8LSA89KV4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 090F3ECA1E9E06EB005D1984 /* Build configuration list for PBXProject "passcode_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090F3EC61E9E06EB005D1984;
+			productRefGroup = 090F3ED01E9E06EB005D1984 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090F3ECE1E9E06EB005D1984 /* passcode_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090F3ECD1E9E06EB005D1984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090F3EDD1E9E06EB005D1984 /* LaunchScreen.storyboard in Resources */,
+				090F3EDA1E9E06EB005D1984 /* Assets.xcassets in Resources */,
+				090F3ED81E9E06EB005D1984 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090F3ECB1E9E06EB005D1984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				097B03421E9F4575001E740D /* PassCodeHandler.swift in Sources */,
+				097B03461E9F6172001E740D /* PasscodeViewController.swift in Sources */,
+				090F3ED31E9E06EB005D1984 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		090F3ED61E9E06EB005D1984 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090F3ED71E9E06EB005D1984 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		090F3EDB1E9E06EB005D1984 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				090F3EDC1E9E06EB005D1984 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		090F3EDF1E9E06EB005D1984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090F3EE01E9E06EB005D1984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090F3EE21E9E06EB005D1984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P8LSA89KV4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = passcode_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.fpf.test.passcode-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		090F3EE31E9E06EB005D1984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P8LSA89KV4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = passcode_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.fpf.test.passcode-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090F3ECA1E9E06EB005D1984 /* Build configuration list for PBXProject "passcode_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090F3EDF1E9E06EB005D1984 /* Debug */,
+				090F3EE01E9E06EB005D1984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090F3EE11E9E06EB005D1984 /* Build configuration list for PBXNativeTarget "passcode_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090F3EE21E9E06EB005D1984 /* Debug */,
+				090F3EE31E9E06EB005D1984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090F3EC71E9E06EB005D1984 /* Project object */;
+}

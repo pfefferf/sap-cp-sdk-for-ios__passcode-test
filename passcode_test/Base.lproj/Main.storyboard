@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MpV-If-fkq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Passcode Test-->
+        <scene sceneID="f0Q-dn-eJo">
+            <objects>
+                <viewController title="Passcode Test" id="MpV-If-fkq" customClass="PasscodeViewController" customModule="passcode_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nSR-4V-7lJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1qQ-gB-Wfr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gN2-wa-N5t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KZb-TC-pfS">
+                                <rect key="frame" x="112" y="273.5" width="151" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57v-It-kl5">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                        <state key="normal" title="Create New Passcode"/>
+                                        <connections>
+                                            <action selector="createNewPasscode:" destination="MpV-If-fkq" eventType="touchUpInside" id="cig-EL-TLT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fo-cf-dgt">
+                                        <rect key="frame" x="0.0" y="30" width="151" height="30"/>
+                                        <state key="normal" title="Check Passcode"/>
+                                        <connections>
+                                            <action selector="checkPasscode:" destination="MpV-If-fkq" eventType="touchUpInside" id="6co-M8-NdA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1b-zi-aQ5">
+                                        <rect key="frame" x="0.0" y="60" width="151" height="30"/>
+                                        <state key="normal" title="Change Passcode"/>
+                                        <connections>
+                                            <action selector="changePasscode:" destination="MpV-If-fkq" eventType="touchUpInside" id="VJ6-ei-V4L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcS-Kb-jDx">
+                                        <rect key="frame" x="0.0" y="90" width="151" height="30"/>
+                                        <state key="normal" title="Reset Passcode"/>
+                                        <connections>
+                                            <action selector="resetPasscode:" destination="MpV-If-fkq" eventType="touchUpInside" id="VKr-6U-FXn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KZb-TC-pfS" firstAttribute="centerX" secondItem="gN2-wa-N5t" secondAttribute="centerX" id="6i6-w0-zpz"/>
+                            <constraint firstItem="KZb-TC-pfS" firstAttribute="centerY" secondItem="gN2-wa-N5t" secondAttribute="centerY" id="lJM-ft-Tpl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9ik-YD-YmS"/>
+                    <connections>
+                        <outlet property="changePasscodeBtn" destination="C1b-zi-aQ5" id="jB4-ie-L8C"/>
+                        <outlet property="checkPasscodeBtn" destination="2Fo-cf-dgt" id="cBl-4H-jRm"/>
+                        <outlet property="createNewPasscodeBtn" destination="57v-It-kl5" id="jiU-SV-CMX"/>
+                        <outlet property="resetPasscodeBtn" destination="BcS-Kb-jDx" id="mYG-s4-bMg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LfJ-uJ-Wvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623.1999999999998" y="-108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>
